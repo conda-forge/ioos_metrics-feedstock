@@ -1,5 +1,5 @@
 {% set name = "ioos-metrics" %}
-{% set version = "0.1.0a1" %}
+{% set version = "0.1.0.dev0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ioos_metrics-{{ version }}.tar.gz
-  sha256: a7ac47e8913e05f7bfd349b94db0f3bcb39c126831e5788f87d00415b4dadfa0
+  sha256: 1686a2b327a00b69d0561ac4a1df6d54f1eadfdc34d2f645b629cae96f307244
 
 build:
   noarch: python
