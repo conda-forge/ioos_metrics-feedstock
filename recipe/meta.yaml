@@ -1,5 +1,5 @@
 {% set name = "ioos-metrics" %}
-{% set version = "0.1.0a1" %}
+{% set version = "0.2.0a0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ioos_metrics-{{ version }}.tar.gz
-  sha256: a7ac47e8913e05f7bfd349b94db0f3bcb39c126831e5788f87d00415b4dadfa0
+  sha256: 4313960a0a04d349f2c9d31b879fdfcf4b9c7af06b32ed30936b6e456cecfa14
 
 build:
   noarch: python
@@ -34,6 +34,7 @@ requirements:
     - pandas
     - pdfminer.six
     - pyarrow
+    - pyobis
     - requests
 
 test:
