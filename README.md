@@ -1,4 +1,4 @@
-About ioos_metrics-feedstock
+About ioos-metrics-feedstock
 ============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ioos_metrics-feedstock/blob/main/LICENSE.txt)
@@ -27,53 +27,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-ioos_metrics-green.svg)](https://anaconda.org/conda-forge/ioos_metrics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ioos_metrics.svg)](https://anaconda.org/conda-forge/ioos_metrics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ioos_metrics.svg)](https://anaconda.org/conda-forge/ioos_metrics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ioos_metrics.svg)](https://anaconda.org/conda-forge/ioos_metrics) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ioos--metrics-green.svg)](https://anaconda.org/conda-forge/ioos-metrics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ioos-metrics.svg)](https://anaconda.org/conda-forge/ioos-metrics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ioos-metrics.svg)](https://anaconda.org/conda-forge/ioos-metrics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ioos-metrics.svg)](https://anaconda.org/conda-forge/ioos-metrics) |
 
-Installing ioos_metrics
+Installing ioos-metrics
 =======================
 
-Installing `ioos_metrics` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `ioos-metrics` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `ioos_metrics` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `ioos-metrics` can be installed with `conda`:
 
 ```
-conda install ioos_metrics
-```
-
-or with `mamba`:
-
-```
-mamba install ioos_metrics
-```
-
-It is possible to list all of the versions of `ioos_metrics` available on your platform with `conda`:
-
-```
-conda search ioos_metrics --channel conda-forge
+conda install ioos-metrics
 ```
 
 or with `mamba`:
 
 ```
-mamba search ioos_metrics --channel conda-forge
+mamba install ioos-metrics
+```
+
+It is possible to list all of the versions of `ioos-metrics` available on your platform with `conda`:
+
+```
+conda search ioos-metrics --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search ioos-metrics --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search ioos_metrics --channel conda-forge
+mamba repoquery search ioos-metrics --channel conda-forge
 
-# List packages depending on `ioos_metrics`:
-mamba repoquery whoneeds ioos_metrics --channel conda-forge
+# List packages depending on `ioos-metrics`:
+mamba repoquery whoneeds ioos-metrics --channel conda-forge
 
-# List dependencies of `ioos_metrics`:
-mamba repoquery depends ioos_metrics --channel conda-forge
+# List dependencies of `ioos-metrics`:
+mamba repoquery depends ioos-metrics --channel conda-forge
 ```
 
 
@@ -118,17 +118,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating ioos_metrics-feedstock
+Updating ioos-metrics-feedstock
 ===============================
 
-If you would like to improve the ioos_metrics recipe or build a new
+If you would like to improve the ioos-metrics recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/ioos_metrics-feedstock are
+Note that all branches in the conda-forge/ioos-metrics-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
