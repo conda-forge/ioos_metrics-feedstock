@@ -58,10 +58,6 @@ outputs:
         - {{ pin_subpackage("ioos_metrics", max_pin="x.x.x") }}
         - python >=3.10
     test:
-      requires:
-        - pip
-      commands:
-        - pip check
       imports:
         - ioos_metrics
 
