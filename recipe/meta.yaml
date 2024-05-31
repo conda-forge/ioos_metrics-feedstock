@@ -1,4 +1,4 @@
-{% set name = "ioos-metrics" %}
+{% set name = "ioos_metrics" %}
 {% set version = "0.2.0a0" %}
 
 package:
@@ -45,6 +45,25 @@ test:
   #  - pip check
   # requires:
   #   - pip
+
+outputs:
+  - name: ioos_metrics
+  - name: ioos-metrics
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python >=3.10
+      run:
+        - {{ pin_subpackage("ioos_metrics", max_pin="x.x.x") }}
+        - python >=3.10
+    test:
+      requires:
+        - pip
+      commands:
+        - pip check
+      imports:
+        - ioos_metrics
 
 about:
   summary: Package to fetch various metrics for IOOS by the numbers
