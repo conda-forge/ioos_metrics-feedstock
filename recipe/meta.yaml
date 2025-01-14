@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "ioos_metrics" %}
 {% set version = "0.5.0" %}
 
@@ -6,23 +7,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ioos_metrics-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ioos_metrics-{{ version }}.tar.gz
   sha256: ad89d2e2c4d3bdd6980b974049e80cc555b1ea923a01c8a2a0885bdccb0cda2d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=42
     - setuptools-scm
     - wheel
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - bs4
     - ckanapi
     - fake-useragent
@@ -38,6 +39,8 @@ requirements:
     - requests
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ioos_metrics
   # Cannot run pip-check when using beautifulsoup
@@ -53,11 +56,13 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.10
+        - python {{ python_min }}
       run:
         - {{ pin_subpackage("ioos_metrics", max_pin="x.x.x") }}
-        - python >=3.10
+        - python >={{ python_min }}
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - ioos_metrics
 
