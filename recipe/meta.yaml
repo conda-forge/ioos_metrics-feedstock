@@ -37,6 +37,7 @@ requirements:
     - pyarrow
     - pyobis
     - requests
+    - tenacity
 
 test:
   requires:
