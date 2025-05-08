@@ -28,7 +28,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-ioos--metrics-green.svg)](https://anaconda.org/conda-forge/ioos-metrics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ioos-metrics.svg)](https://anaconda.org/conda-forge/ioos-metrics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ioos-metrics.svg)](https://anaconda.org/conda-forge/ioos-metrics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ioos-metrics.svg)](https://anaconda.org/conda-forge/ioos-metrics) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-ioos_metrics-green.svg)](https://anaconda.org/conda-forge/ioos_metrics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ioos_metrics.svg)](https://anaconda.org/conda-forge/ioos_metrics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ioos_metrics.svg)](https://anaconda.org/conda-forge/ioos_metrics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ioos_metrics.svg)](https://anaconda.org/conda-forge/ioos_metrics) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ioos__metrics-green.svg)](https://anaconda.org/conda-forge/ioos_metrics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ioos_metrics.svg)](https://anaconda.org/conda-forge/ioos_metrics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ioos_metrics.svg)](https://anaconda.org/conda-forge/ioos_metrics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ioos_metrics.svg)](https://anaconda.org/conda-forge/ioos_metrics) |
 
 Installing ioos_metrics
 =======================
